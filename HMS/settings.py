@@ -26,15 +26,11 @@ SECRET_KEY = 'on9*bf65je3#4+jphqufropk!s9*i&$*54@_9t8^6+c)iro2&q'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 # ALLOWED_HOSTS = []
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['x-empire.onrender.com','127.0.0.1', 'localhost']
-=======
-ALLOWED_HOSTS = ['x-empire-hms.onrender.com','127.0.0.1', 'localhost']
->>>>>>> Rejoice
+ALLOWED_HOSTS = ['x-empire-hms-uka9.onrender.com','127.0.0.1', 'localhost']
 # ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1').split(",")
 # SUPABASE_DB_URL = os.environ.get("SUPABASE_DB_URL")
 # DJANGO_ENV = os.environ.get('DJANGO_ENV')
@@ -80,11 +76,7 @@ ROOT_URLCONF = 'HMS.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-=======
-        'DIRS': [BASE_DIR / "templates"],
->>>>>>> Rejoice
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,11 +105,7 @@ DATABASES = {
         # 'PORT'
     }
 }
-<<<<<<< HEAD
 # Check if the Supabase database URL is set
-=======
-# Check if the Supaase database URL is set
->>>>>>> Rejoice
 # if SUPABASE_DB_URL:
 #     # Use the Supabase database configuration
 #     DATABASES = {
@@ -171,10 +159,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfilesb')
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
